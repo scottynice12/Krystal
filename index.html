@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Krystal · A card from Scott</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(145deg, #2a1a2e 0%, #1a0f1f 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', 'Inter', system-ui, 'Georgia', serif;
+            padding: 2rem 1.5rem;
+        }
+
+        .card {
+            max-width: 800px;
+            width: 100%;
+            background: #fffef5;
+            background-image: radial-gradient(circle at 20% 30%, rgba(255,215,150,0.1) 2%, transparent 2.5%);
+            background-size: 20px 20px;
+            border-radius: 2rem;
+            box-shadow: 0 30px 50px -20px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        /* header with mario + film accents */
+        .header-strip {
+            background: #e52525;
+            padding: 0.6rem 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            border-bottom: 4px solid #f5c542;
+        }
+        .mario-icon {
+            font-size: 1.8rem;
+        }
+        .film-icon {
+            font-size: 1.8rem;
+        }
+
+        .letter-body {
+            padding: 2.5rem 2.2rem 2rem;
+        }
+
+        .greeting {
+            font-size: 1.9rem;
+            font-weight: 600;
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: #ac3a2e;
+            margin-bottom: 1.2rem;
+            border-left: 5px solid #f5b642;
+            padding-left: 1.2rem;
+        }
+
+        .message {
+            font-size: 1.05rem;
+            line-height: 1.65;
+            color: #2c2820;
+            margin-bottom: 2rem;
+        }
+
+        .message p {
+            margin-bottom: 0.8rem;
+        }
+
+        .art-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem 0;
+            background: #fcf3e0;
+            padding: 1.5rem 1rem;
+            border-radius: 2rem;
+            border: 1px solid #eeddbb;
+        }
+
+        .art-item {
+            text-align: center;
+            flex: 1;
+            min-width: 130px;
+        }
+
+        .art-caption {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #b47c2e;
+            margin-top: 12px;
+            font-weight: 500;
+            font-family: monospace;
+        }
+
+        /* Mario drawing (simple but recognizable) */
+        .mario-svg {
+            width: 130px;
+            height: 130px;
+            filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
+        }
+
+        /* Cinema drawing (clapperboard + film strip) */
+        .cinema-svg {
+            width: 130px;
+            height: 130px;
+        }
+
+        .signature {
+            margin-top: 2rem;
+            text-align: right;
+            font-family: 'Brush Script MT', 'Segoe Script', cursive;
+            font-size: 2.2rem;
+            color: #5e3a1f;
+            border-top: 2px dotted #eeddbb;
+            padding-top: 1.2rem;
+        }
+
+        .footer-note {
+            background: #2d2418;
+            padding: 0.8rem;
+            text-align: center;
+            font-size: 0.7rem;
+            color: #e6bc7e;
+            border-top: 1px solid #5e4a34;
+            font-family: monospace;
+        }
+
+        @media (max-width: 550px) {
+            .letter-body { padding: 1.5rem; }
+            .greeting { font-size: 1.5rem; }
+            .message { font-size: 0.95rem; }
+            .mario-svg { width: 90px; height: 90px; }
+            .cinema-svg { width: 95px; height: 95px; }
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="header-strip">
+        <span class="mario-icon">🍄⭐</span>
+        <span class="film-icon">🎞️📽️</span>
+        <span class="mario-icon">👒🌟</span>
+    </div>
+
+    <div class="letter-body">
+        <div class="greeting">Dear Krystal,</div>
+
+        <div class="message">
+            <p>this is my final semester at PVCC. Even though I mostly see you on Wednesdays. However, you were always a delight for everybody. We bonded over movies and tv shows especially Abbott Elementary and you're the goat for sticking with your letterbox opinion saying Mario is a top 4 movie.</p>
+        </div>
+
+        <!-- Drawing 1: Mario (pixel/vector style) + Drawing 2: Cinema (clapperboard) -->
+        <div class="art-row">
+            <div class="art-item">
+                <svg class="mario-svg" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- hat brim -->
+                    <ellipse cx="60" cy="38" rx="28" ry="10" fill="#c42e2e" stroke="#8b1a1a" stroke-width="1.5"/>
+                    <!-- hat top -->
+                    <path d="M40 38 L42 18 L78 18 L80 38 Z" fill="#c42e2e" stroke="#8b1a1a" stroke-width="1.5"/>
+                    <circle cx="60" cy="26" r="5" fill="#f5c542"/>
+                    <!-- face -->
+                    <circle cx="60" cy="55" r="22" fill="#fdd7a8" stroke="#aa7e5a" stroke-width="1.5"/>
+                    <!-- eyes -->
+                    <circle cx="51" cy="52" r="4" fill="white" stroke="#222" stroke-width="1"/>
+                    <circle cx="69" cy="52" r="4" fill="white" stroke="#222" stroke-width="1"/>
+                    <circle cx="52" cy="53" r="2" fill="black"/>
+                    <circle cx="70" cy="53" r="2" fill="black"/>
+                    <!-- eyebrows -->
+                    <line x1="45" y1="45" x2="55" y2="47" stroke="#8b5a2b" stroke-width="2"/>
+                    <line x1="75" y1="45" x2="65" y2="47" stroke="#8b5a2b" stroke-width="2"/>
+                    <!-- nose -->
+                    <ellipse cx="60" cy="58" rx="4" ry="3" fill="#e0ac77"/>
+                    <!-- mustache -->
+                    <path d="M46 64 Q52 60 60 64 Q68 60 74 64 Q70 68 60 66 Q50 68 46 64Z" fill="#a5562c" stroke="#7a3e1a" stroke-width="1"/>
+                    <!-- mouth -->
+                    <path d="M54 68 Q60 73 66 68" stroke="#8b4513" stroke-width="1.5" fill="none"/>
+                    <!-- overalls / body hint -->
+                    <rect x="48" y="76" width="24" height="28" rx="4" fill="#2a5f9e" stroke="#1a3f6e" stroke-width="1.5"/>
+                    <rect x="42" y="90" width="12" height="16" rx="3" fill="#2a5f9e"/>
+                    <rect x="66" y="90" width="12" height="16" rx="3" fill="#2a5f9e"/>
+                    <!-- buttons -->
+                    <circle cx="60" cy="86" r="3" fill="#f5c542" stroke="#c98f1a" stroke-width="1"/>
+                </svg>
+                <div class="art-caption">🍄 MARIO · TOP 4 MOVIE 🍄</div>
+            </div>
+
+            <div class="art-item">
+                <svg class="cinema-svg" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <!-- film reel background -->
+                    <circle cx="60" cy="60" r="48" fill="#1e1b16" stroke="#e6bc7e" stroke-width="2.5"/>
+                    <circle cx="60" cy="60" r="34" fill="#2d251c" stroke="#e6bc7e" stroke-width="1.5" stroke-dasharray="6 4"/>
+                    <!-- sprocket holes -->
+                    <circle cx="60" cy="18" r="5" fill="#e6bc7e"/>
+                    <circle cx="60" cy="102" r="5" fill="#e6bc7e"/>
+                    <circle cx="18" cy="60" r="5" fill="#e6bc7e"/>
+                    <circle cx="102" cy="60" r="5" fill="#e6bc7e"/>
+                    <circle cx="36" cy="28" r="4.5" fill="#e6bc7e"/>
+                    <circle cx="84" cy="28" r="4.5" fill="#e6bc7e"/>
+                    <circle cx="36" cy="92" r="4.5" fill="#e6bc7e"/>
+                    <circle cx="84" cy="92" r="4.5" fill="#e6bc7e"/>
+                    <!-- clapperboard central -->
+                    <rect x="40" y="52" width="40" height="18" rx="3" fill="#e6bc7e" stroke="#2c241a" stroke-width="2"/>
+                    <line x1="45" y1="61" x2="75" y2="61" stroke="#2c241a" stroke-width="2.5"/>
+                    <line x1="45" y1="67" x2="65" y2="67" stroke="#2c241a" stroke-width="2"/>
+                    <!-- film strip accent -->
+                    <rect x="30" y="44" width="60" height="6" fill="#2c241a" rx="1"/>
+                    <rect x="30" y="74" width="60" height="6" fill="#2c241a" rx="1"/>
+                    <text x="60" y="88" font-size="9" text-anchor="middle" fill="#e6bc7e" font-family="monospace" font-weight="bold">LETTERBOXD</text>
+                </svg>
+                <div class="art-caption">🎞️ CINEMA · ABBOTT ELEMENTARY VIBES 🎞️</div>
+            </div>
+        </div>
+
+        <div class="signature">
+            Love, Scott.
+        </div>
+    </div>
+
+    <div class="footer-note">
+        ✦ PVCC · WEDNESDAYS · FOREVER THE GOAT ✦
+    </div>
+</div>
+</body>
+</html>
